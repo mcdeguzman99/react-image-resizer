@@ -47,7 +47,7 @@
     "flow-bin": "^0.65.0",
     "flow-typed": "^2.3.0",
     "jsdom": "^6.0.0",
-    "mocha": "^3.4.1",
+    "mocha": "^5.2.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-test-renderer": "^16.0.0"
@@ -56,8 +56,7 @@
     "build": "babel src --out-dir lib --source-maps",
     "lint": "eslint --max-warnings 0 --ignore-path .eslintignore .",
     "mocha": "mocha --require test/.setup.js --compilers js:babel-register",
-    "test": "yarn lint && yarn mocha",
-    "prepublish": "yarn build"
+    "test": "yarn lint && yarn mocha"
   },
   "jest": {
     "testEnvironment": "node"

@@ -72,7 +72,6 @@ export default class Image extends React.Component<Props, State> {
       image: {
         position: 'absolute',
         display: 'block',
-        left: (this.props.width - this.state.width) / 2,
         top: (this.props.height - this.state.height) / 2,
         width: this.state.width,
         height: this.state.height,
