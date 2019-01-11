@@ -56,7 +56,8 @@
     "build": "babel src --out-dir lib --source-maps",
     "lint": "eslint --max-warnings 0 --ignore-path .eslintignore .",
     "mocha": "mocha --require test/.setup.js --compilers js:babel-register",
-    "test": "yarn lint && yarn mocha"
+    "test": "yarn lint && yarn mocha",
+    "prepublish": "yarn build"
   },
   "jest": {
     "testEnvironment": "node"
